@@ -6,7 +6,7 @@
 .sub-header{
    width: 100%;
   min-height: 100vh;
-   background: linear-gradient(rgba(26, 35, 71, 0.527),rgba(4,9,30,0.7)),url(images/svce_side.jpg) no-repeat;
+   background: linear-gradient(rgba(26, 35, 71, 0.527),rgba(4,9,30,0.7)),url(images/IMG_20190508_095140-EFFECTS.jpg) no-repeat;
    background-position: center;
    background-size: cover; 
    position: relative;
@@ -69,7 +69,7 @@ nav img{
    text-align: center;
 }
 .text h1{
-    font-size: 62px;
+    font-size: 102px;
 }
 .text-box p{
     margin:10px 0 40px;
@@ -115,7 +115,7 @@ nav .fa{
 .header{
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/svcollege.jpg);
+  background-image: linear-gradient(rgba(92, 33, 46, 0.74),rgba(37, 35, 36, 0.63)),url(images/a&c8.jpeg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -150,7 +150,9 @@ nav .fa{
     font-size: 50px;
 }
 .about-col p{
-    padding: 15px 0 25px;
+    padding: 20px 20px;
+    text-align: justify;
+    color: rgb(62,62,62);
 }
 
 .hero-btn{
@@ -189,7 +191,37 @@ nav .fa{
     filter: drop-shadow(0);
     transform: scale(1.1);
 }
-    
+
+.scrolling {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  margin: 30px;
+  
+}
+.scrolling h2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 50px;
+  color: #6085b2;
+  transform: translateY(100%);
+  animation: scrolling 15s linear infinite;
+}
+@keyframes scrolling{
+  0%{
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* footer */
 .footer-area {
 	/*margin-top: 100px; */
@@ -276,60 +308,22 @@ nav .fa{
   }
 
  /*-----workshop----*/
-
- *{
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
-   font-family: 'sans-serif';
- }
- 
-.cards{
-  width: 75px;
-  margin: 50px auto;
-  display: grid;
-  grid-template-columns:repea(3, 1fr);
-  grid-gap: 30px;
-
+.cyber{
+  background-image: url(images/Cybersecurity.jpg);
+}
+.arduino{
+  background-image: url(images/arduino.jpg);
+}
+.robot{
+  background-image: url(images/robot.jpg);
+}
+.python{
+  background-image: url(images/Python.jpg);
+}
+.ai{
+  background-image: url(images/ai.jpg);
 }
 
-.card{
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-  display: inline-block;
-}
-img{
-  width:100%;
-}
-.content{
-  text-align: center;
-  padding: 10px;
-}
-.content h2{
-  margin-top: 5px;
-  letter-spacing: 1.5px;
-  color: #333;
-}
-.content h3{
-  font-size: 17px;
-  color: #5c5c5c;
-  letter-spacing: 1.5px;
-}
-.content a{
-  margin-top: 10px;
-  text-decoration: none;
-  display: inline-block;
-  background-color: #d9563f;
-  color:#fff;
-  font-size: 17px;
-  padding: 5px 18px;
-  border-radius: 40px;
-  letter-spacing: 1.5px;
-
-}
-.content a:hover{
-  background-color: #db7d7d;
-  transition: 0.2s ease;
-}
 /*------events-------*/
 .container1 {
   display: flex;
@@ -337,6 +331,7 @@ img{
   flex-wrap: wrap;
   margin-top: 6%;
   font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 50px;
 }
 .card1 {
   background-color: wheat;
@@ -361,7 +356,24 @@ img{
 .quiz{
   background-image: url(images/quiz.jpg);
 }
-
+.fasion1{
+  background-image: url(images/fasion1.jpg);
+}
+.dance2{
+  background-image: url(images/dance2.jpg);
+}
+.puzzle{
+  background-image: url(images/puzzle.jpg);
+}
+.code{
+  background-image: url(images/code.jpg);
+}
+.basketball{
+  background-image: url(images/basketball.jpg);
+}
+.art{
+  background-image: url(images/a&c3.jpeg);
+}
 .card1 h2{
   padding: 10px;
   text-align: center;
